@@ -1,0 +1,3 @@
+#!/bin/sh
+# Proverava poruku commit-a; pravilo je u commit-msg.mjs. Uključuje se sa: git config core.hooksPath .githooks
+exec node "$(dirname "$0")/commit-msg.mjs" "$1"

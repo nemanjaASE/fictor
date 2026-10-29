@@ -1,0 +1,20 @@
+
+# type(scope): short summary in English, imperative, lowercase, no period, max 72 chars
+#
+# Optional body after a blank line: what changes and why.
+#
+# Types:
+#   feat      new feature             fix       bug fix
+#   docs      documentation           style     formatting, no behavior change
+#   refactor  code restructuring      perf      performance
+#   test      tests                   build     dependencies, Vite
+#   ci        GitHub Actions          chore     other (config, cleanup)
+#   revert    reverts a commit
+# Scope is optional: slides, poster, pptx, docx, export, preview, themes, fonts,
+#   editor, bib, i18n, ui
+# Change that breaks saved themes or files: add ! after the type, e.g. feat(themes)!: ...
+#
+# Examples:
+#   feat(poster): add A2 size
+#   fix(pptx): fix spacing below table caption
+#   docs: describe GitHub Pages deployment

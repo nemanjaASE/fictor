@@ -1,0 +1,29 @@
+{
+  "name": "fictor",
+  "version": "1.0.0",
+  "description": "Fictor: generator profesionalnih šablona za prezentacije, postere i radove (.pptx i .docx)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "docx": "9.5.1",
+    "jszip": "3.10.1",
+    "lucide": "1.48.0",
+    "pptxgenjs": "3.12.0",
+    "qrcode-generator": "1.4.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}

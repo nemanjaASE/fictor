@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fictor</title>
+<meta name="description" content="Generator profesionalnih šablona za prezentacije, postere i radove (.pptx i .docx).">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<!-- tema i jezik pre prvog crtanja, da stranica ne trepne -->
+<script>try{var m=localStorage.getItem('fictor:ui-theme');if(m==='light'||m==='dark')document.documentElement.dataset.theme=m;if(localStorage.getItem('fictor:lang')==='en')document.documentElement.lang='en'}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&family=IBM+Plex+Mono:wght@400;600&family=Fira+Code:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><svg class="logo" viewBox="0 -76 343 78" role="img" aria-label="Fictor"><defs><clipPath id="logoPage"><rect x="34" y="-74" width="44" height="60" rx="7"/></clipPath></defs><rect x="34" y="-74" width="44" height="60" rx="7" class="warm"/><rect x="0" y="-48" width="66" height="44" rx="7" class="acc"/><rect x="0" y="-48" width="66" height="44" rx="7" class="ov" clip-path="url(#logoPage)"/><path transform="translate(98 0)" fill="currentColor" d="M23.3 0L10.7 0L10.7 -40.5L1.5 -40.5L1.5 -51L10.7 -51L10.7 -55.7Q10.7 -64.1 15.4 -68.5Q20 -73 29.3 -73L29.3 -73Q31.4 -73 32.8 -72.8Q34.2 -72.6 35.5 -72.2L35.5 -72.2L35.5 -61.7Q34.8 -62 33.7 -62.1Q32.6 -62.3 31.2 -62.3L31.2 -62.3Q27.2 -62.3 25.3 -60.3Q23.3 -58.4 23.3 -54.7L23.3 -54.7L23.3 -51L56.1 -51L56.1 0L43.4 0L43.4 -40.5L23.3 -40.5L23.3 0M87.4 1L87.4 1Q79.7 1 73.9 -2.4Q68 -5.8 64.7 -11.9Q61.3 -17.9 61.3 -25.6L61.3 -25.6Q61.3 -33.3 64.7 -39.2Q68 -45.2 73.9 -48.6Q79.7 -52 87.4 -52L87.4 -52Q93.7 -52 98.8 -49.7Q103.9 -47.3 107.2 -43.1Q110.5 -38.8 111.4 -33.2L111.4 -33.2L99.3 -33.2Q98.2 -37.3 95.1 -39.6Q92 -41.9 87.6 -41.9L87.6 -41.9Q83.5 -41.9 80.6 -39.9Q77.6 -37.9 76 -34.2Q74.4 -30.5 74.4 -25.6L74.4 -25.6Q74.4 -20.6 76 -16.9Q77.6 -13.2 80.6 -11.1Q83.6 -9.1 87.6 -9.1L87.6 -9.1Q92 -9.1 95.1 -11.4Q98.2 -13.7 99.3 -17.8L99.3 -17.8L111.4 -17.8Q110.5 -12.2 107.2 -7.9Q103.8 -3.7 98.8 -1.3Q93.7 1 87.4 1M140.9 1L140.9 1Q131.5 1 127.1 -3.4Q122.6 -7.9 122.6 -16.8L122.6 -16.8L122.6 -41.1L112.8 -41.1L112.8 -51L122.6 -51L122.6 -62.6L135.3 -67.3L135.3 -51L149.2 -51L149.2 -41.1L135.3 -41.1L135.3 -16.5Q135.3 -12.8 137.3 -11Q139.3 -9.2 143.6 -9.2L143.6 -9.2Q145.3 -9.2 146.7 -9.5Q148 -9.7 149.2 -10.1L149.2 -10.1L149.2 -0.3Q148 0.3 145.8 0.7Q143.6 1 140.9 1M179.3 1L179.3 1Q171.2 1 165.1 -2.4Q158.9 -5.8 155.5 -11.9Q152.1 -17.9 152.1 -25.7L152.1 -25.7Q152.1 -33.5 155.5 -39.4Q158.9 -45.3 165.1 -48.7Q171.2 -52 179.3 -52L179.3 -52Q187.5 -52 193.6 -48.7Q199.7 -45.3 203.1 -39.4Q206.5 -33.5 206.5 -25.7L206.5 -25.7Q206.5 -17.9 203.1 -11.9Q199.6 -5.8 193.5 -2.4Q187.4 1 179.3 1M179.3 -9.1L179.3 -9.1Q183.3 -9.1 186.5 -11.1Q189.7 -13.2 191.5 -16.9Q193.3 -20.7 193.3 -25.8L193.3 -25.8Q193.3 -33.3 189.4 -37.6Q185.4 -41.9 179.3 -41.9L179.3 -41.9Q173.2 -41.9 169.2 -37.6Q165.2 -33.3 165.2 -25.8L165.2 -25.8Q165.2 -20.7 167.1 -16.9Q168.9 -13.2 172.1 -11.1Q175.2 -9.1 179.3 -9.1M225.9 0L213.3 0L213.3 -51L225.6 -51L225.6 -41.6Q227.4 -46 230.7 -48.6L230.7 -48.6Q235 -52 241 -52L241 -52Q243.1 -52 244 -51.6L244 -51.6L244 -39.7Q243.5 -39.9 242.6 -39.9Q241.7 -40 240.4 -40L240.4 -40Q233.1 -40 229.5 -36.8Q225.9 -33.6 225.9 -26.6L225.9 -26.6L225.9 0"/><rect x="141.2" y="-72" width="13.1" height="13.3" class="acc"/></svg></div>
+    <div class="doc-tabs" role="group" id="docSwitch" data-i18n-attr="aria-label:doc.aria" aria-label="Vrsta dokumenta">
+      <button type="button" id="doc-slides" data-doc="slides" aria-pressed="true"><i data-icon="presentation"></i><span data-i18n="doc.slides">Prezentacija</span></button>
+      <button type="button" id="doc-poster" data-doc="poster" aria-pressed="false"><i data-icon="layout-template"></i><span data-i18n="doc.poster">Poster</span></button>
+      <button type="button" id="doc-koncept" data-doc="koncept" aria-pressed="false"><i data-icon="notebook-pen"></i><span data-i18n="doc.koncept">Koncept</span></button>
+      <button type="button" id="doc-seminarski" data-doc="seminarski" aria-pressed="false"><i data-icon="graduation-cap"></i><span data-i18n="doc.seminarski">Seminarski</span></button>
+      <button type="button" id="doc-izvestaj" data-doc="izvestaj" aria-pressed="false"><i data-icon="flask-conical"></i><span data-i18n="doc.izvestaj">Izveštaj</span></button>
+    </div>
+    <div class="top-act">
+      <div class="seg xs" role="group" id="langSwitch" data-i18n-attr="aria-label:ui.lang" aria-label="Jezik">
+        <button type="button" data-lang="sr" lang="sr" title="Srpski">SR</button><button type="button" data-lang="en" lang="en" title="English">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="themeBtn"></button>
+      <button class="btn primary" id="dlBtn" type="button"><i data-icon="download"></i><span id="dlLabel">Preuzmi .pptx</span></button>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="sec-nav" id="secNav" role="tablist" aria-orientation="vertical" data-i18n-attr="aria-label:sec.aria" aria-label="Podešavanja šablona">
+      <button type="button" role="tab" id="tab-tema" data-sec="tema" aria-controls="sec-tema"><i data-icon="swatch-book"></i><span data-i18n="sec.tema">Tema</span></button>
+      <button type="button" role="tab" id="tab-boje" data-sec="boje" aria-controls="sec-boje"><i data-icon="palette"></i><span data-i18n="sec.boje">Boje</span></button>
+      <button type="button" role="tab" id="tab-fontovi" data-sec="fontovi" aria-controls="sec-fontovi"><i data-icon="type"></i><span data-i18n="sec.fontovi">Fontovi</span></button>
+      <button type="button" role="tab" id="tab-raspored" data-sec="raspored" aria-controls="sec-raspored"><i data-icon="layout-dashboard"></i><span data-i18n="sec.raspored">Raspored</span></button>
+      <button type="button" role="tab" id="tab-elementi" data-sec="elementi" aria-controls="sec-elementi"><i data-icon="shapes"></i><span data-i18n="sec.elementi">Elementi</span></button>
+      <button type="button" role="tab" id="tab-podaci" data-sec="podaci" aria-controls="sec-podaci"><i data-icon="id-card"></i><span data-i18n="sec.podaci">Podaci</span></button>
+      <button type="button" role="tab" id="tab-opcije" data-sec="opcije" aria-controls="sec-opcije"><i data-icon="sliders-horizontal"></i><span data-i18n="sec.opcije">Opcije</span></button>
+    </div>
+
+    <aside class="rail" id="rail" data-i18n-attr="aria-label:sec.aria" aria-label="Podešavanja šablona">
+      <section class="grp" id="sec-tema" role="tabpanel" aria-labelledby="tab-tema" tabindex="0">
+        <div class="grp-h"><h2 data-i18n="tema.h">Polazna tema</h2><span class="note" id="presetName"></span></div>
+        <p class="lead" data-i18n="tema.lead">Izaberi temu, pa je doteraj u ostalim karticama.</p>
+        <div class="field" data-for="slides"><span class="lbl" data-i18n="deck.lbl">Vrsta prezentacije</span>
+          <div class="seg sm full" role="group" id="deck" data-i18n-attr="aria-label:deck.lbl">
+            <button type="button" id="dk-izlaganje" data-deck="izlaganje" data-i18n="deck.izlaganje">Izlaganje</button><button type="button" id="dk-predavanje" data-deck="predavanje" data-i18n="deck.predavanje">Predavanje</button><button type="button" id="dk-odbrana" data-deck="odbrana" data-i18n="deck.odbrana">Odbrana</button>
+          </div>
+        </div>
+        <div class="field" data-for="slides" id="techField"><span class="lbl" data-i18n="tech.lbl">Tehnologija</span>
+          <div class="techs" id="techs" role="group" data-i18n-attr="aria-label:tech.lbl"></div>
+          <div class="ctech" id="customTech" hidden>
+            <div class="field"><label for="ct-name" data-i18n="ct.name">Naziv jezika</label><input type="text" id="ct-name" maxlength="40" spellcheck="false" autocomplete="off" data-i18n-attr="placeholder:ct.namePh"></div>
+            <div class="ct-mark"><span class="ct-prev" id="ct-prev"></span><span class="src" id="ct-status" aria-live="polite"></span><button type="button" class="btn sm" id="ct-find"><i data-icon="search"></i><span data-i18n="ct.find">Nađi znak</span></button></div>
+            <div class="field"><label for="ct-cmd" data-i18n="ct.cmd">Komanda na naslovnom slajdu</label><input type="text" id="ct-cmd" maxlength="80" spellcheck="false" autocomplete="off" data-i18n-attr="placeholder:ct.cmdPh"></div>
+          </div>
+          <span class="src" data-i18n="tech.src">Primer predavanja sa kodom i znakom tehnologije.</span>
+        </div>
+        <span class="lbl" data-i18n="look.lbl">Izgled</span>
+        <div id="presets"></div>
+        <div class="look-sec">
+          <span class="look-h" data-i18n="look.own">Tvoje boje</span>
+          <div class="presets" id="techLooks"></div>
+          <div class="fac">
+            <div class="fac-h"><b data-i18n="fac.title">Boje fakulteta</b><small data-i18n="fac.sub">Jedna boja sa logotipa ili sajta postaje cela paleta.</small></div>
+            <div class="fac-in">
+              <label class="sw" data-i18n-attr="title:fac.sw"><span></span><input type="color" id="fac-color" data-i18n-attr="aria-label:fac.aria"></label>
+              <input class="hex" id="fac-hex" data-i18n-attr="aria-label:fac.hexAria" spellcheck="false" autocomplete="off" maxlength="7">
+              <button type="button" class="btn sm" id="fac-logo" hidden><i data-icon="pipette"></i><span data-i18n="fac.logo">Uzmi sa logotipa</span></button>
+            </div>
+            <div class="fac-prev" id="fac-prev" aria-hidden="true"></div>
+            <small class="fac-leg" data-i18n="fac.legend">glavna · akcenat · tekst · sporedni · površina</small>
+            <small class="fac-note" id="fac-note" hidden></small>
+            <button type="button" class="btn primary sm" id="fac-apply">Primeni</button>
+          </div>
+        </div>
+        <div class="sub-h"><span data-i18n="tema.file">Tema u fajlu</span></div>
+        <p class="hint" data-i18n="tema.fileHint">Sačuvaj boje, fontove i podatke u .json fajl da ih koristiš ponovo ili podeliš sa kolegama.</p>
+        <div class="row-2">
+          <button class="btn" id="saveTheme" type="button" data-i18n-attr="title:top.saveTitle"><i data-icon="save"></i><span data-i18n="top.save">Sačuvaj temu</span></button>
+          <button class="btn" id="loadThemeBtn" type="button" data-i18n-attr="title:top.loadTitle"><i data-icon="folder-open"></i><span data-i18n="top.load">Učitaj temu</span></button>
+        </div>
+        <input type="file" id="loadTheme" accept=".json,application/json" hidden>
+      </section>
+
+      <section class="grp" id="sec-boje" role="tabpanel" aria-labelledby="tab-boje" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="boje.h">Boje</h2></div>
+        <p class="lead" data-i18n="boje.lead">Šest boja koje koriste svi rasporedi.</p>
+        <div class="colors" id="colors"></div>
+        <div class="sub"><span class="lbl" data-i18n="boje.contrast">Kontrast</span><div class="checks" id="checks" aria-live="polite"></div></div>
+        <p class="hint" data-i18n="boje.hint">Profesionalan izgled daju jedna glavna boja i neutralni tonovi.</p>
+        <div class="field"><span class="lbl" data-i18n="chart.lbl">Boje grafikona</span>
+          <div class="seg sm full" role="group" id="chartpal" data-i18n-attr="aria-label:chart.lbl">
+            <button type="button" id="cp-tema" data-pal="tema" data-i18n="chart.tema">Tema</button><button type="button" id="cp-okabe" data-pal="okabe">Okabe–Ito</button><button type="button" id="cp-nijanse" data-pal="nijanse" data-i18n="chart.nijanse">Nijanse</button>
+          </div>
+          <span class="src" data-i18n="chart.src">Okabe–Ito: boje koje razlikuju i osobe sa daltonizmom</span>
+        </div>
+      </section>
+
+      <section class="grp" id="sec-fontovi" role="tabpanel" aria-labelledby="tab-fontovi" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="fontovi.h">Fontovi</h2></div>
+        <p class="lead" data-i18n="fontovi.lead">Naslovi, osnovni tekst i kod.</p>
+        <div class="field"><label for="f-heading" data-i18n="f.heading">Naslovi</label><select id="f-heading" data-font="heading"></select><span class="src" id="s-heading"></span></div>
+        <div class="field"><label for="f-body" data-i18n="f.body">Osnovni tekst</label><select id="f-body" data-font="body"></select><span class="src" id="s-body"></span></div>
+        <div class="field"><label for="f-mono" data-i18n="f.mono">Kod</label><select id="f-mono" data-font="mono"></select><span class="src" id="s-mono"></span></div>
+        <p class="hint callout" data-i18n="fontovi.hint">PowerPoint i Word ne ugrađuju fontove u fajl.</p>
+      </section>
+
+      <section class="grp" id="sec-raspored" role="tabpanel" aria-labelledby="tab-raspored" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="raspored.h">Raspored</h2></div>
+        <p class="lead" data-i18n="raspored.lead">Oblik slajdova, postera i strana.</p>
+        <div class="field"><span class="lbl" data-i18n="style.lbl">Stil</span><div class="styles" id="styles"></div></div>
+        <div class="row-2" data-for="poster">
+          <div class="field"><span class="lbl" data-i18n="psize.lbl">Veličina</span>
+            <div class="seg sm full" role="group" id="psize" data-i18n-attr="aria-label:psize.lbl">
+              <button type="button" id="ps-a0" data-psize="A0">A0</button><button type="button" id="ps-a1" data-psize="A1">A1</button>
+            </div>
+          </div>
+          <div class="field"><span class="lbl" data-i18n="porient.lbl">Smer</span>
+            <div class="seg sm full" role="group" id="porient" data-i18n-attr="aria-label:porient.lbl">
+              <button type="button" id="po-land" data-porient="land" data-i18n="porient.land">Položeno</button><button type="button" id="po-port" data-porient="port" data-i18n="porient.port">Uspravno</button>
+            </div>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field" data-for="slides"><span class="lbl" data-i18n="ratio.lbl">Format</span>
+            <div class="seg sm full" role="group" id="ratio" data-i18n-attr="aria-label:ratio.lbl">
+              <button type="button" id="r-169" data-ratio="16:9">16:9</button><button type="button" id="r-43" data-ratio="4:3">4:3</button>
+            </div>
+          </div>
+          <div class="field" data-for="slides poster"><span class="lbl" data-i18n="corners.lbl">Uglovi</span>
+            <div class="seg sm full" role="group" id="corners" data-i18n-attr="aria-label:corners.lbl">
+              <button type="button" id="k-sharp" data-corners="sharp" data-i18n="corners.sharp">Oštri</button><button type="button" id="k-round" data-corners="round" data-i18n="corners.round">Obli</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grp" id="sec-elementi" role="tabpanel" aria-labelledby="tab-elementi" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="elementi.h">Elementi</h2></div>
+        <p class="lead" data-i18n="elementi.lead">Izgled tabela, grafikona, listi, izjave, ključnih brojeva, koda i terminala.</p>
+        <div class="field"><span class="lbl" data-i18n="set.lbl">Komplet</span>
+          <div class="seg sm full" role="group" id="lookSet" data-i18n-attr="aria-label:set.lbl">
+            <button type="button" data-set="akademski" data-i18n="set.akademski">Akademski</button><button type="button" data-set="moderan" data-i18n="set.moderan">Moderan</button><button type="button" data-set="meki" data-i18n="set.meki">Meki</button><button type="button" data-set="tamni" data-i18n="set.tamni">Tamni</button>
+          </div>
+          <span class="src" data-i18n="set.src">Usklađuje tabele, grafikone, brojeve, izjavu i liste jednim klikom; posle svaki menjaš posebno. Tačka označava komplet koji predlaže tema: on se sam bira uz temu dok ne promeniš pojedinačan izgled.</span>
+        </div>
+        <div class="field"><span class="lbl" data-i18n="tbl.lbl">Tabele</span>
+          <div class="terms" role="group" id="tableStyle" data-i18n-attr="aria-label:tbl.lbl"></div>
+          <span class="src" data-i18n="tbl.src">Akademska (tri linije) i Mreža su uobičajene u radovima; ostale su za prezentacije. Istaknut je red sa tvojim rezultatom.</span>
+        </div>
+        <div class="field"><span class="lbl" data-i18n="chs.lbl">Grafikoni</span>
+          <div class="terms" role="group" id="chartStyle" data-i18n-attr="aria-label:chs.lbl"></div>
+          <span class="src" data-i18n="chs.src">Moderan, Tamni i Klasičan ostaju pravi grafikoni (u PowerPoint-u desni klik → Uredi podatke). Zaobljeni i Trake su oblici: podatke menjaš ovde, u sadržaju.</span>
+        </div>
+        <div class="field"><span class="lbl" data-i18n="lst.lbl">Liste</span>
+          <div class="terms" role="group" id="listStyle" data-i18n-attr="aria-label:lst.lbl"></div>
+          <span class="src" data-i18n="lst.src">Kod numerisanih listi brojevi su u boji znaka.</span>
+        </div>
+        <div class="field" data-for="slides"><span class="lbl" data-i18n="qt.lbl">Izjava i citat</span>
+          <div class="terms" role="group" id="quoteStyle" data-i18n-attr="aria-label:qt.lbl"></div>
+          <span class="src" data-i18n="qt.src">Raspored „Izjava“: pitanje za publiku ili citat (u sadržaju red koji počinje sa &gt;).</span>
+        </div>
+        <div class="field" data-for="slides"><span class="lbl" data-i18n="stt.lbl">Ključni brojevi</span>
+          <div class="terms" role="group" id="statStyle" data-i18n-attr="aria-label:stt.lbl"></div>
+          <span class="src" data-i18n="stt.src">U sadržaju: blok ```brojevi, red „broj | opis | sitan tekst | oznaka“ (oznaka nije obavezna).</span>
+        </div>
+        <div class="sub-h" data-for="slides"><span data-i18n="code.h">Kod i terminal</span></div>
+        <div class="field" data-for="slides"><span class="lbl" data-i18n="code.lbl">Izgled koda</span>
+          <div class="terms two" role="group" id="codeStyle" data-i18n-attr="aria-label:code.lbl"></div>
+          <span class="src" data-i18n="code.src">Šeme boja poznatih editora, pojačane gde treba za projektor. „Tema“ boji kod bojama izabrane teme.</span>
+        </div>
+        <div class="field" data-for="slides"><span class="lbl" data-i18n="term.lbl">Terminal</span>
+          <div class="terms two" role="group" id="termStyle" data-i18n-attr="aria-label:term.lbl"></div>
+          <span class="lbl" data-i18n="shape.lbl">Oblik terminala</span>
+          <div class="seg sm full" role="group" id="termShape" data-i18n-attr="aria-label:shape.lbl">
+            <button type="button" data-shape="obican" data-i18n="shape.obican">Običan</button><button type="button" data-shape="vscode">VS Code</button><button type="button" data-shape="moderan" data-i18n="shape.moderan">Moderan</button><button type="button" data-shape="windows">Windows</button>
+          </div>
+          <span class="src" data-i18n="term.src">Šeme boja poznatih terminala, malo pojačane gde je to potrebno za projektor.</span>
+        </div>
+      </section>
+
+      <section class="grp" id="sec-podaci" role="tabpanel" aria-labelledby="tab-podaci" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="podaci.h">Podaci</h2></div>
+        <p class="lead" data-i18n="podaci.lead">Šta piše na naslovnoj strani i u podnožju.</p>
+        <div class="field"><label for="m-title" data-i18n="m.title">Naslov</label><input type="text" id="m-title" data-meta="title"></div>
+        <div class="field"><label for="m-subtitle" data-i18n="m.subtitle">Podnaslov</label><input type="text" id="m-subtitle" data-meta="subtitle"></div>
+        <div class="field" data-for="poster"><label for="m-finding" data-i18n="m.finding">Glavni nalaz</label><textarea id="m-finding" data-meta="finding" rows="3"></textarea><span class="src" data-i18n="m.findingSrc">Jedna rečenica, do 20 reči.</span></div>
+        <div class="field" data-for="poster"><label for="m-link" data-i18n="m.link">Link do rada (za QR kod)</label><input type="text" id="m-link" data-meta="link" inputmode="url" spellcheck="false"></div>
+        <div class="field" data-for="docx"><label for="m-docType" data-i18n="m.docType">Vrsta dokumenta</label><input type="text" id="m-docType" data-meta="docType" list="docTypes"></div>
+        <datalist id="docTypes"><option value="Koncept seminarskog rada"><option value="Seminarski rad"><option value="Izveštaj sa laboratorijske vežbe"><option value="Diplomski rad"><option value="Koncept diplomskog rada"><option value="Koncept master rada"><option value="Predlog projekta"><option value="Nacrt istraživanja"></datalist>
+        <div class="row-2">
+          <div class="field"><label for="m-author" id="lbl-author">Autor</label><input type="text" id="m-author" data-meta="author"></div>
+          <div class="field" data-for="docx"><label for="m-index" data-i18n="m.index">Broj indeksa</label><input type="text" id="m-index" data-meta="index"></div>
+          <div class="field" data-for="slides poster"><label for="m-date" data-i18n="m.date">Datum</label><input type="text" id="m-date" data-meta="date"></div>
+        </div>
+        <div class="field"><label for="m-institution" data-i18n="m.institution">Institucija</label><input type="text" id="m-institution" data-meta="institution"></div>
+        <div class="row-2">
+          <div class="field"><label for="m-course" data-i18n="m.course">Predmet</label><input type="text" id="m-course" data-meta="course"></div>
+          <div class="field"><label for="m-mentor" id="lbl-mentor">Mentor</label><input type="text" id="m-mentor" data-meta="mentor"></div>
+        </div>
+        <div class="row-2" data-deck-only="odbrana">
+          <div class="field"><label for="m-workType" data-i18n="m.workType">Vrsta rada</label><input type="text" id="m-workType" data-meta="workType" list="workTypes"></div>
+          <div class="field"><label for="m-minutes" data-i18n="m.minutes">Vreme za izlaganje (min)</label><input type="text" id="m-minutes" data-meta="minutes" inputmode="numeric"></div>
+        </div>
+        <datalist id="workTypes"><option value="Završni rad"><option value="Diplomski rad"><option value="Master rad"><option value="Specijalistički rad"><option value="Doktorska disertacija"></datalist>
+        <div class="field" data-deck-only="odbrana"><label for="m-committee" data-i18n="m.committee">Komisija</label><textarea id="m-committee" data-meta="committee" rows="3"></textarea><span class="src" data-i18n="m.committeeSrc">Jedan član u redu, sa zvanjem; mentor se upisuje iznad.</span></div>
+        <div class="field" data-for="docx"><label for="m-date2" data-i18n="m.date">Datum</label><input type="text" id="m-date2" data-meta="date"></div>
+        <div class="field" data-for="slides poster"><label for="m-email" data-i18n="m.email">E-pošta (završni slajd)</label><input type="text" id="m-email" data-meta="email" inputmode="email"></div>
+        <div class="field" data-for="slides"><label for="m-footer" data-i18n="m.footer">Podnožje slajdova</label><input type="text" id="m-footer" data-meta="footer" data-i18n-attr="placeholder:m.footerPh"></div>
+
+        <div class="sub-h"><span data-i18n="logo.h">Logo</span><button type="button" class="btn ghost sm" id="logoRemove" hidden><i data-icon="x"></i><span data-i18n="logo.remove">Ukloni</span></button></div>
+        <label class="drop" id="drop" for="logoFile">
+          <span class="thumb" id="logoThumb" aria-hidden="true"><i data-icon="image-plus"></i></span>
+          <span><b id="logoLabel">Dodaj logo fakulteta</b><span data-i18n="logo.desc">PNG, JPG ili SVG.</span></span>
+          <input type="file" id="logoFile" accept="image/png,image/jpeg,image/svg+xml,image/webp" hidden>
+        </label>
+      </section>
+
+      <section class="grp" id="sec-opcije" role="tabpanel" aria-labelledby="tab-opcije" tabindex="0" hidden>
+        <div class="grp-h"><h2 data-i18n="opcije.h">Opcije</h2></div>
+        <p class="lead" data-i18n="opcije.lead">Pismo, citiranje i dodaci.</p>
+        <div class="field"><span class="lbl" data-i18n="script.lbl">Pismo</span>
+          <div class="seg sm full" role="group" id="script" data-i18n-attr="aria-label:script.lbl">
+            <button type="button" id="p-lat" data-script="lat" data-i18n="script.lat">Latinica</button><button type="button" id="p-cyr" data-script="cyr" data-i18n="script.cyr">Ćirilica</button>
+          </div>
+        </div>
+        <div class="field" data-for="docx"><span class="lbl" data-i18n="textfmt.lbl">Format teksta</span>
+          <div class="seg sm full" role="group" id="textfmt" data-i18n-attr="aria-label:textfmt.lbl">
+            <button type="button" id="tf-moderan" data-prav="0" data-i18n="textfmt.moderan">Moderan</button><button type="button" id="tf-pravilnik" data-prav="1" data-i18n="textfmt.pravilnik">Pravilnik</button>
+          </div>
+          <span class="src" data-i18n="textfmt.src">Pravilnik: Times New Roman 12, prored 1,5</span>
+        </div>
+        <div class="field" data-for="docx poster"><span class="lbl" data-i18n="cite.lbl">Stil citiranja</span>
+          <div class="seg sm full" role="group" id="citestyle" data-i18n-attr="aria-label:cite.lbl">
+            <button type="button" id="cs-ieee" data-cite="ieee">IEEE</button><button type="button" id="cs-apa" data-cite="apa">APA 7</button><button type="button" id="cs-harvard" data-cite="harvard">Harvard</button><button type="button" id="cs-chicago" data-cite="chicago">Chicago</button>
+          </div>
+          <span class="src" id="citeHint"></span>
+        </div>
+        <div class="togs">
+          <label class="tog" data-for="slides"><span><span data-i18n="o.samples">Primeri slajdova</span><small data-i18n="o.samplesSub">Kod, tabela, rezultati, dve kolone…</small></span><input type="checkbox" id="o-samples" data-opt="samples"></label>
+          <label class="tog" data-for="slides"><span><span data-i18n="o.numbers">Brojevi slajdova</span></span><input type="checkbox" id="o-numbers" data-opt="numbers"></label>
+          <label class="tog" data-for="docx"><span><span data-i18n="o.guides">Uputstva u tekstu</span><small data-i18n="o.guidesSub">Sivi kurziv sa savetima šta pisati</small></span><input type="checkbox" id="o-guides" data-opt="guides"></label>
+          <label class="tog"><span><span data-i18n="o.typo">Srpska tipografija</span><small data-i18n="o.typoSub">Navodnici „ “, crta u rasponima, razmak pre jedinica</small></span><input type="checkbox" id="o-typo" data-opt="typo"></label>
+        </div>
+      </section>
+    </aside>
+
+    <main class="stage" id="stage">
+      <div class="stage-h">
+        <div class="stage-title"><h1 id="stageTitle">Prezentacija</h1><div class="spec" id="spec"></div></div>
+        <div class="stage-act">
+          <div class="seg" role="group" id="editmode" data-i18n-attr="aria-label:em.aria">
+            <button type="button" id="em-off" data-edit="0"><i data-icon="eye"></i><span data-i18n="em.off">Primer</span></button><button type="button" id="em-on" data-edit="1"><i data-icon="pencil-line"></i><span data-i18n="em.on">Moj sadržaj</span></button>
+          </div>
+          <div class="seg icons" role="group" id="density" data-i18n-attr="aria-label:density.aria">
+            <button type="button" id="d-grid" data-density="grid" data-i18n-attr="aria-label:density.grid;title:density.grid"><i data-icon="layout-grid"></i></button><button type="button" id="d-big" data-density="big" data-i18n-attr="aria-label:density.big;title:density.big"><i data-icon="rectangle-horizontal"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <section class="editor" id="editor" hidden data-i18n-attr="aria-label:ed.aria">
+          <div class="ed-h">
+            <div class="seg sm" role="group" id="edtab" data-i18n-attr="aria-label:ed.tabs">
+              <button type="button" id="et-md" data-tab="md" data-i18n="ed.md">Tekst</button><button type="button" id="et-bib" data-tab="bib" data-i18n="ed.bib">Literatura (BibTeX)</button>
+            </div>
+            <div class="ed-act">
+              <button type="button" class="btn ghost sm" id="edExample"><i data-icon="file-input"></i><span data-i18n="ed.example">Ubaci primer</span></button>
+              <button type="button" class="btn ghost sm" id="edOpen"><i data-icon="folder-open"></i><span data-i18n="ed.open">Učitaj</span></button>
+              <button type="button" class="btn ghost sm" id="edSave"><i data-icon="save"></i><span>Sačuvaj .md</span></button>
+              <button type="button" class="btn ghost sm danger" id="edClear"><i data-icon="trash"></i><span>Obriši</span></button>
+              <input type="file" id="edFile" accept=".md,.txt,.bib,text/markdown,text/plain" hidden>
+            </div>
+          </div>
+          <textarea id="edText" spellcheck="false" data-i18n-attr="aria-label:ed.textAria"></textarea>
+          <div class="ed-status" id="edStatus" aria-live="polite"></div>
+          <details class="ed-help"><summary data-i18n="ed.help">Kako se piše</summary><div id="edHelp"></div></details>
+        </section>
+        <div id="view"></div>
+      </div>
+      <aside class="tip-card"><i data-icon="lightbulb"></i><p class="tip" id="tip"></p></aside>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
